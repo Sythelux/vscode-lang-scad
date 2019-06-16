@@ -17,6 +17,26 @@
 	<key>patterns</key>
 	<array>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.scad</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>^(module)\s.*$</string>
+			<key>name</key>
+			<string>meta.function.scad</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(if|else|for|intersection_for|assign|render|function|include|use|module)\b</string>
+			<key>name</key>
+			<string>keyword.control.scad</string>
+		</dict>
+		<dict>
 			<key>begin</key>
 			<string>/\*\*(?!/)</string>
 			<key>captures</key>
